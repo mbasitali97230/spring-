@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Spring Field School & College | Admissions Open</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Spring Field <span>School & College</span></div>
+        
+        <button class="menu-btn" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#details">Programmes</a>
+          <a href="#admission-form" class="admission-btn">Admission 2025</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH ATTRACTIVE IMAGE -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-right">
+        <h1>Welcome to <span class="accent">Spring Field</span><br>Where Futures Blossom</h1>
+        <p class="hero-desc">Premier institution for Pre-Medical, Pre-Engineering & Computer Science. 35+ years of excellence.</p>
+        
+        <div class="hero-stats">
+          <div class="stat-item"><i class="fas fa-user-graduate"></i> <span id="alumni-count">2800</span>+ Alumni</div>
+          <div class="stat-item"><i class="fas fa-chalkboard"></i> 15:1 ratio</div>
+          <div class="stat-item"><i class="fas fa-book-open"></i> 3 streams</div>
+        </div>
+
+        <div class="course-tags">
+          <span class="course-tag pre-med"><i class="fas fa-microscope"></i> Pre-Medical</span>
+          <span class="course-tag pre-eng"><i class="fas fa-gears"></i> Pre-Engineering</span>
+          <span class="course-tag cs"><i class="fas fa-laptop-code"></i> Computer Science</span>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <span class="live-counter" id="live-interest">137</span> 
+          <span style="color: var(--primary);">students applied this week</span>
+        </div>
+      </div>
+      
+      <!-- ATTRACTIVE REDESIGNED HERO IMAGE -->
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+        <div class="hero-image-content">
+          <!-- Building SVG -->
+          <div class="building-svg"></div>
+          
+          <!-- Floating students -->
+          <div class="floating-students">
+            <div class="student student-1">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="student student-2">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="student student-3">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
+          
+          <!-- Floating books -->
+          <i class="fas fa-book-open floating-book book-1"></i>
+          <i class="fas fa-book floating-book book-2"></i>
+          
+          <!-- Graduation cap -->
+          <i class="fas fa-graduation-cap grad-cap"></i>
+          
+          <!-- Subject icons -->
+          <i class="fas fa-microscope floating-icon microscope"></i>
+          <i class="fas fa-flask floating-icon flask"></i>
+          
+          <!-- Additional animated elements -->
+          <div style="position: absolute; bottom: 30px; right: 20px; color: white; font-size: 20px; background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 30px; backdrop-filter: blur(5px);">
+            <i class="fas fa-star" style="color: gold;"></i> Top Rated
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REST OF THE SECTIONS (same as before) -->
+  <section id="details" class="details-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down">Our Academic Streams</h2>
+      <div class="title-underline" data-aos="fade-down"></div>
+      
+      <div class="details-grid">
+        <!-- Pre-Medical -->
+        <div class="detail-card" data-aos="fade-up">
+          <div class="detail-icon"><i class="fas fa-heart-pulse" style="color: var(--primary);"></i></div>
+          <h3>Pre-Medical</h3>
+          <p>Comprehensive F.Sc with biology, chemistry & physics. State-of-the-art labs, cadaver tables & MD faculty. 90% success in MDCAT.</p>
+          <div class="courses-badge" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <span class="course-tag" style="background: #e2f0e9;">Biology</span>
+            <span class="course-tag" style="background: #e2f0e9;">Chemistry</span>
+            <span class="course-tag" style="background: #e2f0e9;">Physics</span>
+          </div>
+        </div>
+
+        <!-- Pre-Engineering -->
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="detail-icon"><i class="fas fa-gear" style="color: var(--secondary);"></i></div>
+          <h3>Pre-Engineering</h3>
+          <p>F.Sc with mathematics, physics, and chemistry. Hands-on workshops, robotics club, and strong ECAT preparation.</p>
+          <div class="courses-badge" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <span class="course-tag" style="background: #e2f0e9;">Mathematics</span>
+            <span class="course-tag" style="background: #e2f0e9;">Physics</span>
+            <span class="course-tag" style="background: #e2f0e9;">Chemistry</span>
+          </div>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="detail-icon"><i class="fas fa-code" style="color: #0f4623;"></i></div>
+          <h3>Computer Science</h3>
+          <p>ICS program (Computer Science, Mathematics, Statistics). Python, C++, web dev, and competitive programming.</p>
+          <div class="courses-badge" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <span class="course-tag" style="background: #e2f0e9;">Computer Sci</span>
+            <span class="course-tag" style="background: #e2f0e9;">Mathematics</span>
+            <span class="course-tag" style="background: #e2f0e9;">Statistics</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; background: #f0f9f3; border-radius: 40px; padding: 2rem;" data-aos="fade-up">
+        <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Why Spring Field?</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem;">
+          <div><i class="fas fa-flask" style="color: var(--secondary);"></i> 12 science labs</div>
+          <div><i class="fas fa-futbol" style="color: var(--secondary);"></i> Sports grounds</div>
+          <div><i class="fas fa-bus" style="color: var(--secondary);"></i> Transport</div>
+          <div><i class="fas fa-library" style="color: var(--secondary);"></i> Digital library</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admission-form" class="form-section">
+    <div class="container form-container" data-aos="flip-up">
+      <h2 class="form-title">Spring Field Admission 2025</h2>
+      <div class="form-sub"><i class="fas fa-pen"></i> Secure your seat — Pre-Medical, Pre-Engineering, CS</div>
+
+      <form id="admissionForm">
+        <div class="half-grid">
+          <div><label><i class="fas fa-user"></i> Full name</label><input type="text" id="fullName" placeholder="Fatima Ahmed" required></div>
+          <div><label><i class="fas fa-envelope"></i> Email</label><input type="email" id="email" placeholder="fatima@example.com" required></div>
+        </div>
+        
+        <div class="half-grid">
+          <div><label><i class="fas fa-phone"></i> Phone</label><input type="tel" id="phone" placeholder="03xx xxxxxxx" required></div>
+          <div><label><i class="fas fa-calendar"></i> DOB</label><input type="date" id="dob" required></div>
+        </div>
+
+        <div class="form-row">
+          <label><i class="fas fa-map-pin"></i> Address</label>
+          <input type="text" id="address" placeholder="House / street / city" required>
+        </div>
+
+        <div class="half-grid">
+          <div>
+            <label><i class="fas fa-graduation-cap"></i> Programme *</label>
+            <select id="program" required>
+              <option value="" disabled selected>— choose stream —</option>
+              <option value="Pre-Medical">Pre-Medical (F.Sc)</option>
+              <option value="Pre-Engineering">Pre-Engineering (F.Sc)</option>
+              <option value="Computer Science">Computer Science (ICS)</option>
+            </select>
+          </div>
+          <div>
+            <label><i class="fas fa-school"></i> Previous school</label>
+            <input type="text" id="prevSchool" placeholder="School name">
+          </div>
+        </div>
+
+        <div class="half-grid">
+          <div><label><i class="fas fa-percent"></i> Matric %</label><input type="number" id="percentage" placeholder="85.5"></div>
+          <div><label><i class="fas fa-calendar-check"></i> Session</label>
+            <select id="session">
+              <option>Fall 2025</option>
+              <option>Spring 2026</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label><i class="fas fa-message"></i> Why Spring Field? (optional)</label>
+          <textarea id="message" rows="2" placeholder="Your motivation..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin: 1.5rem 0; flex-wrap: wrap;">
+          <input type="checkbox" id="agree" style="width: 22px; height: 22px;" required>
+          <label for="agree" style="font-weight: 400;">Main information ki tasdeeq karta hoon</label>
+        </div>
+
+        <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Apply Now</button>
+      </form>
+
+      <div id="successMessage" class="success-message">
+        <i class="fas fa-check-circle"></i> Alhamdulillah! Aapka form submit ho gaya. Team jald rabta karegi.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo" style="color: white;">Spring Field</div>
+          <p style="margin: 1rem 0;">Quality education since 1985.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 style="color: white;">Campus</h4>
+          <p>123 Education Blvd, Green Town, Lahore</p>
+          <p>+92 42 1234567</p>
+        </div>
+        <div>
+          <h4 style="color: white;">Programmes</h4>
+          <p>Pre-Medical<br>Pre-Engineering<br>Computer Science</p>
+        </div>
+      </div>
+      <div class="footer-bottom" style="text-align: center; border-top: 1px solid #255e40; padding-top: 2rem; margin-top: 2rem;">
+        <p>© 2025 Spring Field School & College. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
